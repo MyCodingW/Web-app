@@ -1,0 +1,22 @@
+runtime: php83
+env: devshell
+
+runtime_config:
+  document_root: public
+
+env_variables:
+  PROJECT_ID: hybrid-chassis-418513
+
+
+handlers:
+- url: /vendor
+  static_dir: vendor
+
+- url: /Media
+  static_dir: images
+
+- url: /CSS
+  script: css
+
+- url: /HTML
+  script: html
